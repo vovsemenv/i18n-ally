@@ -776,6 +776,11 @@
           "default": true,
           "description": "%config.annotation_in_place%"
         },
+        "i18n-ally.enableKeyPathParsing": {
+          "type": "boolean",
+          "default": false,
+          "description": "%config.annotation_in_place%"
+        },
         "i18n-ally.annotationMaxLength": {
           "type": "number",
           "default": 40,

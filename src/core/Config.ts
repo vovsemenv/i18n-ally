@@ -28,6 +28,7 @@ export class Config {
     'ignoreFiles',
     'parserOptions',
     'parsers.extendFileExtensions',
+    'enableKeyPathParsing',
   ]
 
   static readonly refreshConfigs = [
@@ -558,5 +559,9 @@ export class Config {
 
   static get telemetry(): boolean {
     return workspace.getConfiguration().get('telemetry.enableTelemetry') as boolean
+  }
+
+  static get enableKeyPathParsing(): boolean {
+    return !!this.getConfig('enableKeyPathParsing')
   }
 }
